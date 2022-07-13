@@ -4,10 +4,24 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { myStore, loader } from './mstore';
+
+import VComponent from './vusers';
+import MComponent from './musers';
+import RComponent from './rusers';
+import SeparatorLine from './SeparatorLine';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App>
+      <SeparatorLine text={'with Valtio'} />
+      <VComponent />
+      <SeparatorLine text={'with Mobx'} />
+      <MComponent store={myStore} loadState={loader} />
+      <SeparatorLine text={'Pur React'} />
+      <RComponent />
+    </App>
   </React.StrictMode>
 );
 
