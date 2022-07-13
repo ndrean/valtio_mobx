@@ -1,6 +1,6 @@
 import React from 'react';
 
-// import './App.css';
+import './App.css';
 
 // eslint-disable-next-line react/prop-types
 function App({ children }) {
