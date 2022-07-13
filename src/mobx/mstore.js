@@ -3,11 +3,11 @@ import { fetchUsers } from '../utils/fetchUsers';
 
 // central state with attributes and actions
 
-export const myStore = observable({
+export const mStore = observable({
   users: null,
   fetchMbxUsers: async () => {
     const response = await fetchUsers();
-    runInAction(() => (myStore.users = response));
+    runInAction(() => (mStore.users = response));
   },
   // using generators
   // *fetchMbxUsers() {
@@ -16,6 +16,6 @@ export const myStore = observable({
   // }
 });
 
-export const loader = observable({
-  loading: false,
-});
+// export const loader = observable({
+//   loading: false,
+// });
