@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import { fetchUsers } from './fetchUsers';
-import { Users } from './user';
-
-const Loader = () => <p>Loading...</p>;
+import { fetchUsers } from '../utils/fetchUsers';
+import { Users } from '../utils/user';
+import Loader from '../utils/loader';
 
 export default function RComponent() {
   const [users, setUsers] = useState(undefined);

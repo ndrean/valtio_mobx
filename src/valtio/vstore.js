@@ -1,5 +1,5 @@
 import { proxy, useSnapshot } from 'valtio';
-import { fetchUsers } from './fetchUsers';
+import { fetchUsers } from '../utils/fetchUsers';
 
 export { useSnapshot };
 

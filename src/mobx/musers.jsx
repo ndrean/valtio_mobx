@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { observer } from 'mobx-react-lite';
-import Loader from './loader';
+import Loader from '../utils/loader';
 
 export default observer(function MComponent({ store }) {
   const [load, setLoad] = useState(true);

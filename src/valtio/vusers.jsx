@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useSnapshot } from 'valtio';
 
 import { usersStore } from './vstore';
-import Loader from './loader';
-import { Users } from './user';
+import Loader from '../utils/loader';
+import { Users } from '../utils/user';
 
 export default function VComponent() {
   const { users } = useSnapshot(usersStore);

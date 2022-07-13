@@ -1,5 +1,5 @@
 import { observable, runInAction } from 'mobx';
-import { fetchUsers } from './fetchUsers';
+import { fetchUsers } from '../utils/fetchUsers';
 
 // central state with attributes and actions
 
